@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividades Mais Elaboradas</title>
+</head>
+<body>
+  <h1>Atividade Aleatória</h1>
+  <p id="atividade"></p>
+  <script>
+    const atividades = [
+      "Visitar uma cidade portuguesa que nenhum dos dois tenha ido.",
+      "Experimentar um desporto que nenhum dos dois tenha experimentado.",
+      "Ir ver um evento desportivo ao vivo.",
+      "Ir ao teatro.",
+      "Escolher aleatoriamente um lugar em Portugal e passar o fim de semana lá.",
+      "Inscrever-se num workshop.",
+      "Ir acampar.",
+      "Visitar um museu ou algo cultural.",
+      "Fazer a Rota Vicentina, ou uma mini rota.",
+      "Ir à Serra da Estrela/Gerês.",
+      "Passar uma noite num hotel."
+    ];
+
+    function sorteio() {
+      const index = Math.floor(Math.random() * atividades.length);
+      document.getElementById("atividade").innerText = atividades[index];
+    }
+
+    sorteio();
+  </script>
+</body>
+</html>
